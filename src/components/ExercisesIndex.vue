@@ -15,6 +15,7 @@ export default {
       <p>Reps: {{ exercise.reps }}</p>
       <p>Sets: {{ exercise.sets }}</p>
       <p>Workout_id: {{ exercise.workout_id }}</p>
+      <button v-on:click="$emit('showExercise', exercise)">More info</button>
     </div>
   </div>
 </template>
